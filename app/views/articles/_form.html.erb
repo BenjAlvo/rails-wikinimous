@@ -1,0 +1,11 @@
+<%= form_for(task) do |t| %>
+  <div>
+    <%= t.label :title, "Enter title of task" %>
+    <%= t.text_field :title, class: 'form-control' %>
+  </div>
+  <div>
+    <%= t.label :content, "Enter content" %>
+    <%= t.text_field :content %>
+  </div>
+  <%= t.submit %>
+<% end %>
